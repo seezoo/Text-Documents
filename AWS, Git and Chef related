@@ -47,7 +47,7 @@ In other words Rebasing is a common way to integrate upstream changes into your 
 *git remote rm origin (removes remote origin)
 *git remote -v (to check remote branch for this git)
 *git pull origin master --allow-unrelated-histories. (to merge unrelated histories.Generally used when you create a new repo online and try to add content)
-
+*git config --global http.sslVerify "false"  (if git clone is giving ssl exception)
 
 
 AWS Commands

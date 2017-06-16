@@ -130,6 +130,13 @@ clear property to counter float
 
 *padding is inside the box remember so background color applies to padding as well whereas margin is outside the box.Box contains content and padding.
 
+7)Absolute vs relative
+
+Elements with absolute position can be positioned anywhere we want inside their parent.By default all elements are static positioned.
+If you want to create an absolute position then parent should be relative.
+position :relative
+position :absolute
+
 
 
 
