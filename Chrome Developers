@@ -1,0 +1,139 @@
+---------------------------------------------------------------------Chrome Developers--------------------------------------------------------
+
+//Console
+console.log()
+document.getElementById()
+document.getElementByTagName('p').  //get all paragraphs
+document.getElementsByTagName('html')[0].    ///get HTML element
+document.getElementsByTagName('html')[0].outerHTML.   ///String version of the element
+
+
+//Sources
+contains fonts ,images ,scripts and CSS
+
+//Network
+
+/Application tab
+local storage,cookies
+
+//Security
+
+////////////////Inspect////////////
+font-weight : bold
+font-size : 16px
+color :darkblue
+border: solid
+
+//Sources ---snippets ....this is to create snippets of code
+
+//Console ---show console drawer
+
+//Debugger
+snippets can be run and you can use debugger on them
+watch ...you can put variables
+call stack ---right click the stack and do restart frame
+Async button 
+Option+cmnd+F(to search that piece of text)
+
+//console.log,console.warn.console.info,console.error
+//console.time('time'),console.timeEnd(); (to time a function)
+//console.trace();(it prints call stack)
+//you can font-size in console
+
+Type of Breakpoints - Line of code,XHR(found in sources),Conditional line of code(Edit breakpoint-break if certain condition is met,eg queryfield.value.length),DOM(break on node removal,attribute modification),Event listerner,Exception
+Blackbox script
+
+XHR breakpoints(any XHR),Break when when query contains jquery
+
+Event listeneer breakpoints --Mouse,CLick,--DomMutation(DOmcontentLoaded)--To load state of page when it loads
+
+You can check curl command on network
+
+
+---------------------------------------------------------------------HTML5 and CSS----------------------------------------------------------------
+
+
+Head Element -- Title,CSS styles, info for browser,search engine etc
+Body Element -- Content, text ,links etc
+Body can have headings -h1 to h6..h1 most important and h6 least
+
+######HTML Elements############
+1)Title
+2)Headings - <h1></h1> (Headings are to highlight something.Can range from h1 to h6.h1 is biggest and h6 is smallest)
+3)Paraghraphs - <p></p> (elemenst for larger text)
+4)Bold element - <strong></strong>  (Anything inside these elements gets bold)
+5)Italics element - <em></em>  (anything inside this will be in italics)
+6)Underline - <u></u>  (anything inside this will be underlined)
+7)Line break - <br>  (line break.no need for opening or closing this.just put br)
+8)Images - <img src="" alt="text if image does not get loaded"> (no closing element needed for images tag)
+9)Links - <a href="">link to google</a>   (this  open the link on thje same page you work)
+<a href="" target="_blank">link to google</a> (target ="_black" this will open the link in a new tab)
+We can also link to other documents like images with this and not only the other websites
+10)Link to style sheet - <link rel="stylesheet" type="text/css" href="style.css"> (rel tells browser its a stylesheet,type tells html its a css and href is the path to css.Link tag is also a standalone and does not need any closing)
+11)Divison - Div
+
+
+#####CSS#######
+3 ways to use
+1)Style attribute
+2)inside HTML document
+3)inside .css file
+
+Rules --selector and declaration box
+
+h1{
+	
+}
+Here h1 is the selector and curly brackets is the rules for all header1
+
+Various attributes
+1)Headings - color, font-size, font-family(Arial,Times new roman etc)
+2)Paragraph - font-size,text-align :justify(),font-family
+CSS inheritance - Child elements inherit the properties of parent elements unless we override their styles.
+
+3)Color consist of color and transparency rgba(12,13,14,.75)
+4)Classes and Id's in css
+*For class css we use the . notation
+.main-text{       (here main-text is the class for some element)
+	text-align:justify
+}
+
+*For id's we use # symbol
+
+#creator-text{   (here creator-text is the id of some element)
+	
+}
+
+5)CSS Box model
+*content(actual content),Padding(transparent area around the content),Border(goes around padding and content),margin(space between boxes).Padding,border and margin are properties incss and can be applied to any side of box.HEIGHT AND WIDTH ARE FOR ENTIRE BOX NOT FOR CONTENT.
+*Block element span the whole width like paragraphs)and inline elements(cant set their hight or width.they end with the image)
+*Asterisk selector is used to affect all elements and usully to remove defaults
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;   (With this the width and height properties includes content,padding and border but not the margin.If we do not include this then width and height are for the entire box.)
+}
+
+6)Layouts
+
+First put everything in straight div from up to down, then assign width with % and make sure its 100% for the ones you want in line, then assign flout:left
+{
+	flout:left
+}
+
+clear property to counter float
+.clearfix:after {    (:after does not have any space)
+	content : "";
+	display : table;
+	clear: both;
+}
+
+*padding is inside the box remember so background color applies to padding as well whereas margin is outside the box.Box contains content and padding.
+
+
+
+
+
+
+
+

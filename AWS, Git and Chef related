@@ -1,0 +1,91 @@
+AWS, Git and Chef related
+
+1)Linux Commands
+
+*ls -a (shows hidden files)
+*top(show processes)
+*less filename(shows contents of file)
+*Search -- /text
+*Shift N (for next search)
+*ps (list all processes)
+*tcpdump
+*service chef-client stop
+*tail -f fileName
+*sudo su( change user to root)
+* .(current directory)
+* ..(move up a directory)
+*rm -r foldername (remove a folder and its contents)
+*killall -9 node (nodejs leaves a instance behind. we need to kill it)
+*curl --noproxy localhost, http://localhost:8080/webservice. (curl with no proxy)
+*chmod  4=read,6=write,7=execute and its for user,group and other so chmod 777 file means read,write execute for user,group and other
+*lsof -i :portnumber (find processes on a port)
+*export PATH=$PATH:/Users/tci483/Development/Terraform   (add to path)
+*yum install java-1.8.0-openjdk-devel -y
+*yum install docker -y. (install docker)
+
+
+FTP
+*sftp hostname
+*lcd (local directory)
+*lpwd (local path)
+*pwd (server path)
+*put filename (copies the file to the remote server)
+*get remoteFile
+
+Git commands
+
+*git clone repository
+*git reset --hard <commit_id> 
+*git push -f master (Force Push)
+*git rebase master (Like if you are developing CCK and cut feature branch from master and CCP went to production and pushed to master.Rebase will merge the remote changes to to your feature branch and show all your commits after.)
+In other words Rebasing is a common way to integrate upstream changes into your local repository. Pulling in upstream changes with git merge results in a superfluous merge commit every time you want to see how the project has progressed. On the other hand, rebasing is like saying, “I want to base my changes on what everybody has already done.”
+*Revert to a particular commit
+*git init (to initialize repository)
+*git add filename
+*git commit -m "message"
+*git remote add origin repositoryName
+*git remote rm origin (removes remote origin)
+*git remote -v (to check remote branch for this git)
+*git pull origin master --allow-unrelated-histories. (to merge unrelated histories.Generally used when you create a new repo online and try to add content)
+
+
+
+AWS Commands
+chmod 400 my-key-pair.pem
+aws configure (will ask for access key ID, secret,region etc)
+aws s3 ls (list all s3 buckets)
+aws ec2 terminate-instances --instance-id ID (to terminate an ec2 instance)
+aws s3 cp s3://myBucket/myfile /myfolderpath --region regionid
+aws s3 cp s3://Mybucket/myfolder /myfolderpath --recursive --region region id (for copying all files of a folder)
+aws ec2 stop-instances --instance-ids $INSTANCE_ID --region us-east-1 (Stop AWS instances)
+aws ec2 wait instance-stopped --instance-ids $INSTANCE_ID --region us-east-1 (wait for aws instance to stop)
+
+
+Terraform commands
+*$ terraform plan                                  # plan
+*$ terraform apply                                 # shortcut for plan & apply - avoid this in production
+When using an AMI to create an instance that AMI should be hvm virtualized or Hardware assisted virtualized and not para virtualized.
+*$ terraform plan -out out.terraform      # terraform plan and write the plan to out file
+*$ terraform apply out.terraform            # apply terraform plan using out file
+*$ terraform show                                  # show current state
+*$ cat terraform.tfstate                           # show state in JSON format
+
+Docker File Commands (Dockerfile is a file which configures environment.Get base image and configure image)
+*FROM (docker base image)
+*ENV HTTP_PROXY http://proxy.kdc.capitalone.com:8099
+*RUN command
+*COPY 
+*ARG 
+*EXPOSE
+
+Docker Commands
+*docker images (list the docker images)
+*docker image -t "myImage" .
+*docker run -p 80:80 myImage  (-p means listen on hostport:port on container)
+*you can mount a folder to get your changes reflect faster
+*docker ps-a  (shows docker processes)
+*docker compose (search more on it.can save volume even if container goes bad.)
+*docker service update image (search what is it)
+
+
+
