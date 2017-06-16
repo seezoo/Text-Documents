@@ -72,7 +72,7 @@ When using an AMI to create an instance that AMI should be hvm virtualized or Ha
 
 Docker File Commands (Dockerfile is a file which configures environment.Get base image and configure image)
 *FROM (docker base image)
-*ENV HTTP_PROXY http://proxy.kdc.capitalone.com:8099
+*ENV HTTP_PROXY http://proxy:port (like kdc.cap.com:9999)
 *RUN command
 *COPY 
 *ARG 
