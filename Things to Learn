@@ -1,0 +1,55 @@
+Things to Learn
+
+*watch docker tutorial
+*unit test with karma
+*Start aws instance with command line
+*how to create aws instance with command line(probably from terraform)
+*How to distribute nodejs webapi's like in java it is done through jars(does it need a build tool)
+*Module exports in javascript(node JS)
+*check if there is a free version of nexus
+*unit testing in javascript using Karma jasmine etc
+*code coverage tools in java like sonarcube,CLM scan etc
+*handle asynchronous communication between rest apis (using rabbit MQ or something)
+*unit and integration testing in spring boot
+*what is network interface eth0(what are the various network interfaces)
+*ReactJs front end development
+*Finish terraform course and create a terraform to create ec2 and run jenkins on it
+*Apache spark, Kafka etc,Kubernetis
+
+
+*AWS Certification(S3,IAM,Other services etc) --(50%)
+*HTML video 
+*Chrome Developer Tools video (80%)
+*React JS
+
+vusava268039.cof.ds.capitalone.com
+
+To-DO List
+
+Create VPC with public/private subnets etc        ----P1
+Watch other AWS lectures ---------P1
+Install docker and create an AMI out of it on AWS(100%)
+Create a terraform script which creates a EC2 ---(100%)
+Create a terraform which creates EC2 and  ELB etc and connects the ELB to EC2   -----P2
+Create terraform script to pull docker image from dockerhub and run it          -----P2
+Create a jenkins which compiles my code when pushed in and creates a docker image from the latest code and pushes it to docker hub     ----------P3
+Start building the website with react -------P1
+Keep writing unit tests for protractor, karma-jasmine(10%)   ----------P2
+Create a java program and integrate slf4j in it with log4j -----------P2
+Create a Spring boot and NojeJs app to interact with database--(25%) ---------P1
+Create Datetime example with nodejs and java   -------P2
+Create Logging example with nodejs and Java    -------P3
+Create Mocking Unit test example with java    -------P3
+Create Cucumber gherkin Example with Java     --------P4
+Create Paging Example with Java Rest API--same with nodejs   -------P2
+Upload an image to s3 using AWS S3 AMI with a node api and java API   ---------P2
+Using Graph API  ----------P3
+Using login API's   ---------P3
+Elastic search ----------P3
+HTML Course (53%) -----------P1
+hash code and equals code ------------P3
+javascript create classes,services,model etc ----------P3
+GraphQL(12%)---------------P1
+Kafka----------------P1 (44%)
+JavaScript -------------P1
+
